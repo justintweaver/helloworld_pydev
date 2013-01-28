@@ -1,0 +1,8 @@
+<h1>3 Newest Polls...</h1>
+{% if three_newest_polls %}
+    <ul>
+    {% for poll in three_newest_polls %}
+        <li>{{ poll.question }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}

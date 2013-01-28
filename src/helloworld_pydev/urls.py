@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'helloworld_pydev.views.home', name='home'),
     # url(r'^helloworld_pydev/', include('helloworld_pydev.foo.urls')),
+    url(r'^hello_polls/$', 'hello_polls.views.index'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
