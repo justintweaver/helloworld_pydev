@@ -9,6 +9,9 @@ urlpatterns = patterns('',
     # url(r'^$', 'helloworld_pydev.views.home', name='home'),
     # url(r'^helloworld_pydev/', include('helloworld_pydev.foo.urls')),
     url(r'^hello_polls/$', 'hello_polls.views.index'),
+    url(r'^hello_polls/(?P<poll_id>\d+)/$', 'hello_polls.views.detail'),
+    url(r'^hello_polls/(?P<poll_id>\d+)/vote/$', 'hello_polls.views.vote'),
+    url(r'^hello_polls/(?P<poll_id>\d+)/results/$', 'hello_polls.views.results'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
